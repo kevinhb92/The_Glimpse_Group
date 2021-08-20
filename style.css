@@ -1,5 +1,37 @@
 body {
-    background-color: white;
+    margin:0px;
+    padding:0px;
+    background-color: rgb(234,232,243);
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+
+header{
+    padding-top: 18px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0em;
+    background-color: white;
+    box-shadow: 1px 1px 6px rgb(0, 0, 0,0.2);
+}
+
+.logocontainer {
+    display: flex;
+    align-items: center;
+}
+
+.company{
+    color: rgb(51,157,215);
+    font-size: 1em;
+    padding-left: 7px;
+    padding-bottom: 8px;
+}
+
+.slogan {
+    color: grey;
+    font-size: 0.8em;
+    padding-left: 6px;
+    padding-bottom: 6px;
+}
+
