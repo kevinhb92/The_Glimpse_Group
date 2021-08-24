@@ -1,11 +1,29 @@
+
+/* Responsive */
+/* @media(max-width: 1920px) {
+}
+
+@media(max-width: 1080px) {
+}
+
+@media(max-width: 600px){
+}
+
+@media(max-width: 400px) {
+} */
+
+
 body, h1, p, a, ul, li {
     margin:0px;
 }
 
 body {
-    background-color: rgb(51,157,215,0.05);
-    padding:0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    width:100%;
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: rgb(51,157,215,0.05); */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header{
@@ -61,22 +79,24 @@ header a{
 }
 
 nav{
+    width:100%;
     display: flex;
     flex-direction: inline;
     align-items: center;
     justify-content:center;
     background-color: rgb(51,157,215);
     height: 36px;
-    box-shadow: 0px 1px 2px rgb(0, 0, 0,0.2);
+    box-shadow: 0px 1px 2px rgb(0, 0, 0,0.1);
+    position: relative;
 }
 
 nav a{
-    font-size:14px;
+    font-size:1vw;
     color: white;
     text-align: center;
     text-decoration: none;
     margin:1px;
-    width: 130px;
+    width: 10%;
     padding:6px;
 }
 
@@ -101,20 +121,21 @@ section{
     height: 400px;
     padding-left: 200px;
     padding-right: 200px;
+    
 }
 
 p{
-    text-align: center;
+    text-align: left;
 }
 
 #learn_more {
-    width:180px;
+    width:150px;
     padding:15px;
     margin: 15px;
-    background-color:rgb(150,150,150,0.6);
-    color: white;
-    box-shadow: 0px 2px 5px rgb(0, 0, 0,0.2);
-    border-radius: 18px;
+    background-color:rgb(240,240,240);
+    color: black;
+    box-shadow: 0px 2px 3px rgb(0, 0, 0,0.2);
+    border-radius: 5px;
     border:none;
 }
 
@@ -132,7 +153,6 @@ aside{
     height: 500px;
     
 }
-
 
 
 article{
@@ -166,12 +186,14 @@ display: flex;
 }
 
 .points{
-   background-color:rgb(51,157,215,0.01);
+    
+    background-color:rgb(51,157,215,0.01);
     height: 600px;
     list-style: none;
-    font-size:22px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    font-size:1.5vw;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
 }
 
 .points a{
@@ -181,13 +203,18 @@ display: flex;
     justify-content:center;
     width:50%;
     font-weight: 500;
-    color: grey;
+    color: rgb(120, 120, 120);
     text-decoration: none;
     margin: 5px;
     padding:10px;
-    background-color: rgb(255,255,255,0.5);
+    background-color: rgb(255,255,255,0.8);
+    box-shadow: 0px 1px 1px rgb(0, 0, 0,0.1);
+    
     border-radius: 5px;
+    position: relative;
 }
+
+
 
 section a:hover{
     color: rgb(51,157,215);
@@ -199,7 +226,78 @@ section ul{
     color: rgb(51,157,215);
 }
 
+.explain{
+    clear:both;
+    display: flex;
+    flex-direction: inline;
+    align-items: center;
+    justify-content:center;
+    background-color:rgb(51,157,215,0.01);
+    padding-top:50px;
+    padding-right:100px;
+    padding-left:100px;
+    padding-bottom:50px;
+}
 
+
+.boxes{
+    width:100%;
+    display: flex;
+    flex-direction: inline;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.boxes a{
+    width:220px;
+    height:100px;
+    font-size: 0.9vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    clear: both;
+    margin:20px;
+    padding:20px;
+    background-color: rgb(250, 250, 250);
+    text-decoration: none;
+    box-shadow: 0px 1px 2px rgb(0, 0, 0,0.2);
+    position:relative;
+    border-radius: 10px;
+    
+}
+
+
+
+.boxes a:hover{
+    clear: both;
+    margin:20px;
+    padding:20px;
+    color: white;
+    background-color: rgb(51,157,215);
+    text-decoration: none;
+    
+}
+
+sup{
+color: rgb(0, 0, 0);
+}
+
+
+.boxes b:hover{
+    color:white;
+}
+
+.bottom{
+    height:700px;
+}
+.industry_solution{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
 
 footer{
     display: flex;
@@ -222,3 +320,4 @@ footer a{
 footer a:hover{
     color: rgb(31, 94, 128);
 }
+
